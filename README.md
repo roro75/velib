@@ -5,3 +5,5 @@ Affichage dynamique de la liste des velib à Paris et de leurs emplacements sur 
  - NodeJs / ExpressJs, 
  - MongoDB, 
  - PugJs template 
+ 
+ --db velib --collection paris --file Paris.json --jsonArray
