@@ -8,6 +8,9 @@ Affichage dynamique de la liste des velib à Paris et de leurs emplacements sur 
  
 
 MongoDB
---db velib --collection paris --file Paris.json --jsonArray
+```sh
+ ./mongoimport --db velib --collection paris --file Paris.json --jsonArray 
+```
+
 
 ![alt tag](http://romeo.lascoux.fr/git/velib-git.jpg) 
