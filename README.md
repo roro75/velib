@@ -1,7 +1,7 @@
 # velib
 
-Affichage dynamique de la liste des velib à Paris et de leurs emplacements sur une mapbox 
+Affichage dynamique de la liste des velib à Paris et de leurs emplacements sur une [Mapbox](https://www.mapbox.com/) 
 
- - nodeJs / ExpressJs, 
+ - NodeJs / ExpressJs, 
  - MongoDB, 
  - PugJs template 
