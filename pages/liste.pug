@@ -1,0 +1,18 @@
+doctype html
+html(lang='en')
+    include ../includes/head.pug
+    body
+    // Navigation
+    include ../includes/nav.pug    
+    .container
+      .row
+        .col-lg-12
+            h1= titre
+            p 
+                | Ici nous afficherons une liste html des stations de la ville de Paris trié par ordre alphabétique
+            .liste   
+                ul
+                  each val in data
+                    li= val.name
+    
+    include ../includes/footer.pug

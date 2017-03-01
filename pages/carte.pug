@@ -1,0 +1,29 @@
+doctype html
+html(lang='en')
+    include ../includes/head.pug
+    body     
+    // Navigation
+    include ../includes/nav.pug    
+    .container
+      .row
+        .col-lg-12
+            h1= titre
+           
+            #map
+            
+            script.
+                
+                var velibArray = !{JSON.stringify(data)}  
+                
+                L.mapbox.accessToken = 'pk.eyJ1IjoiaWZvY29wIiwiYSI6ImNpenF6ZGZqbzAwMjAycXF1bHR6cGp4MHAifQ.7XTmFtiFig6Bu-68Cqql7g';
+                
+                var map = L.mapbox.map('map', 'mapbox.streets') 
+                .setView([48.866667, 2.333333], 13); 
+                
+                for(var i=0; i<velibArray.length;i++){
+                var lat = velibArray[i].latitude;
+                var lon = velibArray[i].longitude; 
+                L.marker([ velibArray[i].latitude,  velibArray[i].longitude],{title:velibArray[i].name, riseOnHover:true, clickable:false}).addTo(map);
+                }
+                
+    include ../includes/footer.pug

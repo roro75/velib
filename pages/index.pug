@@ -1,0 +1,32 @@
+doctype html
+html(lang='en')
+    include ../includes/head.pug
+    include ../includes/nav.pug  
+    body
+    
+        // Page Content
+        .container
+          .row
+            .col-lg-12
+              
+              h1 Velib 
+              p
+                | Utilisation des technologies 
+                mark
+                 | nodeJs / ExpressJs, MongoDB, PugJs template
+                | pour afficher la liste des stations Velib à Paris ainsi que l'affichage dynamique de leurs emplacements sur une
+                mark
+                 | mapbox   
+                  
+              span 
+                a(href='https://github.com/roro75') github
+              hr
+              div
+                img(src='../img/Velib_Paris_2010.jpg',alt='velib à Paris', width='100%')   
+                
+        include ../includes/footer.pug        
+
+        // jQuery Version 1.11.1
+        script(src='../js/jquery.js')
+        // Bootstrap Core JavaScript
+        script(src='../js/bootstrap.min.js')
